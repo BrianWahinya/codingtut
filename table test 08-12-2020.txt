@@ -1,0 +1,65 @@
+Goal
+Displaying the data from the json file onto the html page in form of a table
+using javascript 
+
+Steps
+First
+Create a folder. Copy the json file into it.
+Using VisualStudioCode(download from internet) create two files:
+main.html, main.js and insert them in the folder
+Download Jquery from jquery website and insert it in the folder.
+Download and addon for chrome called WebserverForChrome-200-Ok. This will help you avoid CORS related errors.
+
+Second
+Html
+In the main.html, create the div where the table will be displayed.
+At the bottom, near the end of the body, insert script source for jquery and another for main.js
+
+Js
+Strictly use Javascript ES5. Do not use ES6 and above versions
+Use Jquery ajax function to retrieve data from the json file
+Do not use Jquery in any other code like table creation.
+Example(copy paste this code-sample into the js file to help you out):
+
+$.ajax({
+    type:"GET",
+    url:"main.json",
+    data:null,
+    dataType:'json',
+    crossDomain:true,
+    beforeSend:onBeforeSend,
+    error:onDataError,
+    success:onDataSuccess,
+});
+// executed before sending request 
+function onBeforeSend(jqXHR, settings){
+    // console.log('settings', settings.url);
+}
+// executed in case of data error
+function onDataError(xhr,status,error){
+    console.log('data error', error);
+}
+// executed in case of retrieved data success
+function onDataSuccess(response){
+    console.log('response data', response);
+    // call the callback function: in this case it is main function
+    main(response)	
+}
+/** main function to transform and display the data
+  * all other table related code will be inside this function
+*/
+function main(data){
+   console.log('data in the main', data);
+   // create a dom element for table;
+   // loop over the data using a for-loop
+   // as you loop, create rows, columns and cells using javascript
+   // as you loop, append the rows into the table
+
+
+
+   // Note: The next instructions are only if you have displayed the table correctly.
+   // Give the first, middle and last row a html className property. Call it bold_rows
+   // For those mentioned rows, use setAttribute('style',) to make the texts in those rows bold and black in color
+   // All other rows, use setAttribute('style',) to make the texts in those rows be of color blue 
+}
+// end of the functions and js file
