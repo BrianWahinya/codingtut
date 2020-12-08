@@ -1,0 +1,14 @@
+[
+    {"id":1, "iso3":"KEN", "name":"Kenya", "population":40000},
+    {"id":2, "iso3":"UGA", "name":"Uganda", "population":25000},
+    {"id":3, "iso3":"RWA", "name":"Rwanda", "population":10000},
+    {"id":4, "iso3":"TZN", "name":"Tanzania", "population":35000},
+    {"id":5, "iso3":"ETH", "name":"Ethiopia", "population":60000},
+    {"id":6, "iso3":"CHL", "name":"Chile", "population":15000},
+    {"id":7, "iso3":"BRA", "name":"Brazil", "population":70000},
+    {"id":8, "iso3":"ARG", "name":"Argentina", "population":55000},
+    {"id":9, "iso3":"MEX", "name":"Mexico", "population":55000},
+    {"id":10, "iso3":"USA", "name":"United States of America", "population":99900},
+    {"id":11, "iso3":"JPN", "name":"Japan", "population":20000},
+    {"id":12, "iso3":"BRB", "name":"Barbados", "population":12000}
+]
